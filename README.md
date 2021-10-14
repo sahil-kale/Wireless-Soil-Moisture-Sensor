@@ -6,7 +6,11 @@ Currently, I fly out of a gliding club called SOSA. I've been flying longer than
 I've had to drive out many times just to discover that the field is too wet. I decided to make a wireless soil moisture sensor that would broadcast the how moist the soil was so that all members can see this.
 
 ## Implementation
-I opted to use an ESP32 so I could embed the wireless communication inside the chip, meaning the entire system can be run off of a portable USB battery pack.
+I opted to use an ESP32 so I could embed the wireless communication inside the chip, meaning the entire system can be run off of a portable USB battery pack. I treated this more as an exercise to validate my knowlege of RTOS, UDP communication, as well as schematic capture & PCB layout.
+
+## Schematic:
+![Schematic](Schematic.png)
+
 
 ## Pictures
 ![Picture of the device](image.jpg)
