@@ -3,4 +3,12 @@
 
 #define BLINK_GPIO 25
 
+//Wifi Configs
+#define WIFI_SSID "test"
+#define WIFI_KEY "test"
+#define WIFI_MAX_RETRY 3
+
+#define MULTICAST_IPV4_ADDR "232.10.11.12"
+#define PORT 3333
+
 #endif
