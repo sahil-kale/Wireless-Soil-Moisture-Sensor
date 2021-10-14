@@ -4,7 +4,7 @@
 #define BLINK_GPIO 25
 
 //Wifi Configs
-#define WIFI_SSID "test"
+#define WIFI_SSID "Test"
 #define WIFI_KEY "test"
 #define WIFI_MAX_RETRY 3
 

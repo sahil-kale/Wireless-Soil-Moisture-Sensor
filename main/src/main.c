@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include <stdint.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "driver/gpio.h"
 #include "sdkconfig.h"
 #include "config.h"
+#include "wifi_cmds.h"
 #include "adc.h"
 
 void task_heartbeat()
@@ -25,6 +27,7 @@ void task_heartbeat()
 
 void app_main(void)
 {
+    //while(wifi_init_sta());
     xTaskCreate(task_heartbeat, "Blink", 4096, NULL, 0, NULL); //4096 Bytes in case we want to use printf or something
     xTaskCreate(task_adc, "ADC Task", 4096, NULL, 1, NULL);
 }
